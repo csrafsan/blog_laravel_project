@@ -10,3 +10,4 @@ class DemoController extends Controller
         return view('DemoView',['firstkey'=>$firstname, 'middlekey'=>$middlename,'lastkey'=>$lastname]);
     }
 }
+  
