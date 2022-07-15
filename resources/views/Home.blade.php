@@ -1,8 +1,15 @@
-@php
-$num1=4;
-$num2=9;
+@include('subview.Menu')
+<br>
+<br>
+<br>
+<br>
 
-$result =  $num1+$num2;
-echo $result."<br>";
-echo time();
-@endphp
+<h1>this is my home page</h1>
+
+<br>
+<br>
+<br>
+<br>
+
+@include('subview.Footer',['footerText'=>'All Rights Reserved By Rafsan'])
+
