@@ -1,7 +1,9 @@
 <select>
-@foreach($DataKey as $CountryName)
+@forelse($DataKey as $CountryName)
 <option value="">{{$CountryName}}</option> 
-@endforeach
+@empty
+<option value=""><p>No country</p></option>
+@endforelse
 
 </select>
 
