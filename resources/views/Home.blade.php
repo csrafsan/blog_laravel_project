@@ -1,4 +1,11 @@
-<select>
+@foreach($DataKey as $CountryName)
+
+ <p>{{$loop->index}}. Country Name: {{$CountryName}}</p>
+
+@endforeach
+
+
+<!-- <select>
 @forelse($DataKey as $CountryName)
 <option value="">{{$CountryName}}</option> 
 @empty
@@ -12,6 +19,6 @@
 <p>You are not logged In</p>
 @else
 <p>LogIn status not found</p>
-@endif
+@endif -->
 
 
