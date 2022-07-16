@@ -13,6 +13,19 @@ class HomeController extends Controller
         $Data=array("Bangladesh","India","Canada");
         $LogInStatus =true;
 
-        return view('Home',['DataKey'=>$Data,'LogInStatusKey'=>$LogInStatus]);
+        return view('home',['DataKey'=>$Data,'LogInStatusKey'=>$LogInStatus]);
+    }
+
+    function PortfolioClass(){
+
+        return view('portfolio');
+    }
+    function ServiceClass(){
+
+        return view('service');
+    }
+    function AboutClass(){
+
+        return view('about');
     }
 }
